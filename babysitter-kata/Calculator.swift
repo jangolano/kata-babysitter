@@ -33,6 +33,7 @@ class Calculator{
     }
 
     func calculateFamilyCBefore9()->Int{
-        return 0;
+        return 21;
     }
+
 }
