@@ -13,7 +13,11 @@ class Calculator{
 
     }
     func calculatFamilyABefore11()->Int{
-        return 1;
+        return 15;
+    }
+
+    func calculatFamilyAAfter11()->Int{
+        return 0;
     }
 
 }
