@@ -17,7 +17,7 @@ class Calculator{
     }
 
     func calculatFamilyAAfter11()->Int{
-        return 0;
+        return 20;
     }
 
 }
