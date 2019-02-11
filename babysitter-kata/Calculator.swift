@@ -20,4 +20,7 @@ class Calculator{
         return 20;
     }
 
+    func calculatFamilyBefore10()->Int{
+        return 0;
+    }
 }
