@@ -34,4 +34,8 @@ class CalculatorTests: XCTestCase {
         XCTAssertEqual(calc.calculateFamilyCBefore9(), 21)
     }
 
+    func testFamilyCAfter9(){
+        XCTAssertEqual(calc.calculateFamilyCAfter9(), 15)
+    }
+
 }

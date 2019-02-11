@@ -36,4 +36,8 @@ class Calculator{
         return 21;
     }
 
+    func calculateFamilyCAfter9()->Int{
+        return 0;
+    }
+
 }
