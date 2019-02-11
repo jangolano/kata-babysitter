@@ -31,4 +31,8 @@ class Calculator{
     func calculateFamilyBAfter12()->Int{
         return 16;
     }
+
+    func calculateFamilyCBefore9()->Int{
+        return 0;
+    }
 }
