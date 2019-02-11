@@ -23,4 +23,8 @@ class Calculator{
     func calculatFamilyBefore10()->Int{
         return 12;
     }
+
+    func calculatFamilyBBetween10and12()->Int{
+        return 0;
+    }
 }

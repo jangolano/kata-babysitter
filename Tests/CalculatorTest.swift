@@ -22,4 +22,9 @@ class CalculatorTests: XCTestCase {
         XCTAssertEqual(calc.calculatFamilyBefore10(), 12)
     }
 
+    func testFamilyBBetween10and12(){
+        XCTAssertEqual(calc.calculatFamilyBBetween10and12(), 8);
+    }
+
+
 }
