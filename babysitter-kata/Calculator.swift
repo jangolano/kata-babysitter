@@ -21,6 +21,6 @@ class Calculator{
     }
 
     func calculatFamilyBefore10()->Int{
-        return 0;
+        return 12;
     }
 }
