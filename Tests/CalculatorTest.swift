@@ -26,5 +26,8 @@ class CalculatorTests: XCTestCase {
         XCTAssertEqual(calc.calculatFamilyBBetween10and12(), 8);
     }
 
+    func testFamilyBAfter12(){
+        XCTAssertEqual(calc.calculateFamilyBAfter12(), 16)
+    }
 
 }
