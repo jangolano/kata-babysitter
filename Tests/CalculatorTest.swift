@@ -38,4 +38,12 @@ class CalculatorTests: XCTestCase {
         XCTAssertEqual(calc.calculateFamilyCAfter9(), 15)
     }
 
+    func testCalculateEndingHours(){
+        let endingHours = calc.calculateEndingHours(startTime: 5, endTime: 8)
+        XCTAssertEqual(endingHours.count, 3)
+        XCTAssertEqual(endingHours[0], 6)
+        XCTAssertEqual(endingHours[1], 7)
+        XCTAssertEqual(endingHours[2], 8)
+    }
+
 }

@@ -40,4 +40,8 @@ class Calculator{
         return 15;
     }
 
+    func calculateEndingHours(startTime:Int, endTime:Int)->Array<Int>{
+        return Array()
+    }
+
 }
