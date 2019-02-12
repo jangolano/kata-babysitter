@@ -45,5 +45,9 @@ class CalculatorTests: XCTestCase {
         XCTAssertEqual(endingHours[1], 7)
         XCTAssertEqual(endingHours[2], 8)
     }
+    
+    func testCaculatePay(){
+        XCTAssertEqual(calc.calculatePay(family:"A", startTime: 5, endTime: 12), 110)
+    }
 
 }

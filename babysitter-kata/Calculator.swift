@@ -48,5 +48,7 @@ class Calculator{
         return results;
     }
 
-
+    func calculatePay(family:Character, startTime:Int, endTime:Int)->Int{
+        return 0;
+    }
 }
