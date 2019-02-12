@@ -49,6 +49,17 @@ class Calculator{
     }
 
     func calculatePay(family:Character, startTime:Int, endTime:Int)->Int{
-        return 0;
+        var totalPay=0;
+        let endingHours = calculateEndingHours(startTime: startTime, endTime: endTime)
+        for hour in endingHours{
+            if(family=="A"){
+                if(hour<=11){
+                    totalPay+=calculatFamilyABefore11();
+                }else{
+                    totalPay+=calculatFamilyAAfter11();
+                }
+            }
+        }
+        return totalPay;
     }
 }
