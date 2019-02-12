@@ -41,7 +41,12 @@ class Calculator{
     }
 
     func calculateEndingHours(startTime:Int, endTime:Int)->Array<Int>{
-        return Array()
+        var results = Array<Int>();
+        for n in startTime+1...endTime{
+            results.append(n);
+        }
+        return results;
     }
+
 
 }

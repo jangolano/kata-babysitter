@@ -10,6 +10,7 @@
 		84D44487A87976EB836EB61A /* CalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D44465358ECF860528C7B6 /* CalculatorTest.swift */; };
 		84D4498EB2F78B2A6CEE56CA /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D44A7A290257C2B21EC1E6 /* Calculator.swift */; };
 		84D44BA9FD3594378094A05D /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D44A7A290257C2B21EC1E6 /* Calculator.swift */; };
+		D0C53F5722131B7000D9D651 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C53F5622131B7000D9D651 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		84D44960314FB8B547A02E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		84D44A5C2827580D02C50FA3 /* babysitter-kata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "babysitter-kata"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D44A7A290257C2B21EC1E6 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		D0C53F5622131B7000D9D651 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				84D44A7A290257C2B21EC1E6 /* Calculator.swift */,
+				D0C53F5622131B7000D9D651 /* main.swift */,
 			);
 			path = "babysitter-kata";
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C53F5722131B7000D9D651 /* main.swift in Sources */,
 				84D44BA9FD3594378094A05D /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,8 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.jangolano.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -351,8 +354,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -449,6 +451,7 @@
 				84D440CF3DE948DBD849F34B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84D44A200E11D0E9E5203EFD /* Build configuration list for PBXNativeTarget "babysitter-kata" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +460,7 @@
 				84D44383B2979C91F3936B17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84D44FB3CDDF8C61E9EC0F37 /* Build configuration list for PBXProject "babysitter-kata" */ = {
 			isa = XCConfigurationList;
