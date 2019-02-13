@@ -42,8 +42,17 @@ class Calculator{
 
     func calculateEndingHours(startTime:Int, endTime:Int)->Array<Int>{
         var results = Array<Int>();
-        for n in startTime+1...endTime{
-            results.append(n);
+        var completeTime = endTime;
+        if(endTime<startTime){
+            completeTime+=12;
+        }
+        for time in startTime+1...completeTime{
+            if(time>12){
+                results.append(time-12)
+            }
+            else{
+                results.append(time)
+            }
         }
         return results;
     }
@@ -62,4 +71,6 @@ class Calculator{
         }
         return totalPay;
     }
+    
+    
 }

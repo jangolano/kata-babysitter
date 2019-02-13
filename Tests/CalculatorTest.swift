@@ -46,8 +46,21 @@ class CalculatorTests: XCTestCase {
         XCTAssertEqual(endingHours[2], 8)
     }
     
+    func testCalculateEndingHourAm(){
+        let endingHours = calc.calculateEndingHours(startTime: 10, endTime: 3)
+        XCTAssertEqual(endingHours.count, 5)
+        XCTAssertEqual(endingHours[0], 11)
+        XCTAssertEqual(endingHours[1], 12)
+        XCTAssertEqual(endingHours[2], 1)
+        XCTAssertEqual(endingHours[3], 2)
+        XCTAssertEqual(endingHours[4], 3) 
+    }
     func testCaculatePay(){
         XCTAssertEqual(calc.calculatePay(family:"A", startTime: 5, endTime: 12), 110)
+    }
+    
+    func testCalculatePayFamilyB(){
+        XCTAssertEqual(calc.calculatePay(family: "B", startTime: 6, endTime: 3), 80)
     }
 
 }
