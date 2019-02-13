@@ -70,6 +70,12 @@ class Calculator{
                 }else{
                     totalPay+=calculateFamilyBAfter12()
                 }
+            }else if(family=="C"){
+                if(hour<=9){
+                    totalPay+=calculateFamilyCBefore9()
+                }else{
+                    totalPay+=calculateFamilyCAfter9()
+                }
             }
         }
         return totalPay;
