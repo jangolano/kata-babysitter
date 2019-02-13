@@ -51,16 +51,16 @@ class CalculatorTests: XCTestCase {
         XCTAssertEqual(endingHours.count, 5)
         XCTAssertEqual(endingHours[0], 11)
         XCTAssertEqual(endingHours[1], 12)
-        XCTAssertEqual(endingHours[2], 1)
-        XCTAssertEqual(endingHours[3], 2)
-        XCTAssertEqual(endingHours[4], 3) 
+        XCTAssertEqual(endingHours[2], 13)
+        XCTAssertEqual(endingHours[3], 14)
+        XCTAssertEqual(endingHours[4], 15) 
     }
     func testCaculatePay(){
         XCTAssertEqual(calc.calculatePay(family:"A", startTime: 5, endTime: 12), 110)
     }
     
     func testCalculatePayFamilyB(){
-        XCTAssertEqual(calc.calculatePay(family: "B", startTime: 6, endTime: 3), 80)
+        XCTAssertEqual(calc.calculatePay(family: "B", startTime: 6, endTime: 3), 112)
     }
 
 }

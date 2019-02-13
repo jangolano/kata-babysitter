@@ -47,12 +47,7 @@ class Calculator{
             completeTime+=12;
         }
         for time in startTime+1...completeTime{
-            if(time>12){
-                results.append(time-12)
-            }
-            else{
-                results.append(time)
-            }
+            results.append(time)
         }
         return results;
     }
@@ -66,6 +61,14 @@ class Calculator{
                     totalPay+=calculatFamilyABefore11();
                 }else{
                     totalPay+=calculatFamilyAAfter11();
+                }
+            }else if(family=="B"){
+                if(hour<=10){
+                    totalPay+=calculatFamilyBefore10();
+                }else if(hour<=12){
+                    totalPay+=calculatFamilyBBetween10and12()
+                }else{
+                    totalPay+=calculateFamilyBAfter12()
                 }
             }
         }
