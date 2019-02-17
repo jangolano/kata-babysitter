@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "babysitter-kata/Calculator.swift"
-            timestampString = "572123687.131248"
+            timestampString = "572124274.7229919"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "calculateEndingHours(startTime:endTime:)"
             landmarkType = "7">
          </BreakpointContent>
