@@ -31,10 +31,12 @@ while(!validStartTime){
     if(startHour >= 17){
         validStartTime=true;
     }
-    startHour -= 12;
+    if(startHour>12){
+        startHour -= 12;
+    }
 }
 
-endHour = startHourB
+endHour = startHour
 while(startHour == endHour){
     print("Enter the End TimeB(24 Hour Format")
     let inStr = readLine()!
